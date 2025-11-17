@@ -1,34 +1,135 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fdf9f0; /* fundo creme */
+    color: #4e4633; /* texto marrom escuro */
+}
+
+/* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #86795f; /* título marrom médio */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #86795f;
 }
 
 header img.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 1rem;
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    border: 2px solid #e0dacc;
 }
 
+/* Seções */
 section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 10px;
+    padding: 2.5rem 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fffaf0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 h2 {
-    color: #4CAF50;
+    color: #86795f;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Links e botões */
+a {
+    color: #86795f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button, .btn {
+    background-color: #86795f;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin: 0.5rem 0.5rem 0 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #a49172;
+}
+
+/* Projetos */
+.project {
+    margin-bottom: 2rem;
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    color: #86795f;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #4e4633;
+}
+
+/* Contato */
+#contato p {
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+/* Footer (opcional) */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f5f0e6;
+    color: #86795f;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    header img.profile-pic {
+        width: 140px;
+        height: 140px;
+    }
 }
