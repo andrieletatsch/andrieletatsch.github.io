@@ -1,87 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andriele Tatsch | Data Analyst Portfolio</title>
-
     <link rel="stylesheet" href="styles.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f7f7f7;
-        }
-        header {
-            background: #333;
-            padding: 20px;
-            text-align: center;
-        }
-        header a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        .section {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-        }
-        h1 {
-            color: #333;
+        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+        header { background: #333; padding: 20px; text-align: center; }
+        header a { color: white; margin: 0 15px; text-decoration: none; font-size: 17px; }
+        .hero { display: flex; align-items: center; max-width: 950px; margin: 40px auto; background: #fff; border-radius: 12px; padding: 35px 40px; box-shadow: 0 6px 32px rgba(0,0,0,0.07); }
+        .hero-text { flex: 2; }
+        .hero-image img { width: 160px; border-radius: 50%; box-shadow: 0 2px 16px rgba(0,0,0,0.12);}
+        h1 { color: #2471A3; font-size: 2.5em; margin-bottom: 2px; }
+        .subtitle { color: #5D6D7E; font-size: 1.2em; margin-bottom: 25px; }
+        .skills { background: #f0f4f8; padding: 18px; border-radius: 13px; margin-bottom: 18px;}
+        .skills ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 18px;}
+        .skills li { background: #fff; border-radius: 7px; box-shadow: 0 2px 8px rgba(36,113,163,0.1); padding: 10px 20px; color: #2471A3; font-weight: bold; }
+        .buttons { display: flex; gap: 16px; margin-top: 15px;}
+        .btn, .btn-outline { padding: 13px 30px; border: none; border-radius: 7px; font-size: 1em; cursor: pointer; transition: 0.2s;}
+        .btn { background: #2471A3; color: #fff; box-shadow: 0 2px 8px rgba(36,113,163,0.15);}
+        .btn:hover { background: #164778;}
+        .btn-outline { background: #fff; color: #2471A3; border: 2px solid #2471A3;}
+        .btn-outline:hover { background: #f0f4f8; }
+        .contact-info { margin-top: 28px; font-size: 1.08em;}
+        footer { background: #333; color: #fff; text-align: center; padding: 16px 0; margin-top: 40px; }
+        @media (max-width: 700px) {
+            .hero { flex-direction: column; padding: 20px 10px; }
+            .hero-image img { margin-top: 20px;}
         }
     </style>
 </head>
 <body>
- <header>
+  <header>
     <a href="index.html">Home</a>
     <a href="projects.html">Projetos</a>
     <a href="certificates.html">Certificados</a>
     <a href="contact.html">Contato</a>
-</header>
-
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Hello, I’m <span>Andriele</span> 👋</h1>
-            <p>
-                Hi, I’m Andriele.
-                I am a Data Analyst with a strong background in Information Technology (IT).
-                For over 10 years, I worked as a Business Analyst in the Healthcare field.
-                I learned how data can truly help people and improve operations.
-                I am good at taking numbers and turning them into clear advice for smarter decisions.
-                I have certifications in Data Analysis, and I am skilled in key tools: Power BI, SQL, and Advanced Excel. 
-                I know how to work with data cleaning, statistics, and visualization.
-                I am looking for a Data Analyst job where I can use my strong skills 
-                in business and technology in any industry. My experience in Healthcare gave 
-                me strong abilities in critical thinking and process optimization that apply everywhere. 
-               Let's connect!
-            </p>
-
-            <div class="buttons">
-                <a href="projects.html" class="btn">View My Projects</a>
-                <a href="contact.html" class="btn-outline">Get in Touch</a>
-            </div>
-
-            <div class="contact-info">
-                <p>Email: <a href="mailto:andriele.tatsch@gmail.com">andriele.tatsch@gmail.com</a></p>
-                <p>LinkedIn: 
-                    <a href="https://www.linkedin.com/in/andrieletatsch" target="_blank">
-                        linkedin.com/in/andrieletatsch
-                    </a>
-                </p>
-            </div>
-        </div>
-
-        <div class="hero-image">
-            <img src="profile.jpg" alt="Andriele Tatsch portrait" />
-        </div>
-    </section>
-
-    <footer>
-        <p>© Andriele Tatsch — Data Analyst Portfolio</p>
-    </footer>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Andriele Tatsch</h1>
+      <div class="subtitle">Data Analyst | Bilingual English-Portuguese</div>
+      <p>
+        <strong>Transformando dados em insights.</strong> Mais de 10 anos como Business Analyst no setor Healthcare. Experiência prática em análise de dados para melhorar operações e decisões inteligentes.<br>
+        <span class="skills">
+          <ul>
+            <li>Power BI</li>
+            <li>SQL</li>
+            <li>Advanced Excel</li>
+            <li>Data Cleaning</li>
+            <li>Visualização</li>
+          </ul>
+        </span>
+      </p>
+      <div class="buttons">
+        <a href="projects.html" class="btn">Meus Projetos</a>
+        <a href="contact.html" class="btn-outline">Fale comigo</a>
+      </div>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:andriele.tatsch@gmail.com">andriele.tatsch@gmail.com</a></p>
+        <p>LinkedIn: 
+          <a href="https://www.linkedin.com/in/andrieletatsch" target="_blank">linkedin.com/in/andrieletatsch</a>
+        </p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Andriele Tatsch portrait" />
+    </div>
+  </section>
+  <footer>
+    <p>© Andriele Tatsch — Data Analyst Portfolio</p>
+  </footer>
 </body>
 </html>
