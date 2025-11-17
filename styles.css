@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     background-color: #fdf9f0; /* fundo creme */
     color: #4e4633; /* texto marrom escuro */
 }
@@ -32,8 +32,8 @@ header p {
 }
 
 header img.profile-pic {
-    width: 160px;
-    height: 160px;
+    width: 80px;
+    height: 80px;
     border-radius: 12px;
     margin-top: 1.5rem;
     border: 2px solid #e0dacc;
