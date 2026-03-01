@@ -80,13 +80,13 @@ section{padding:96px 0}
 .atext p+p{margin-top:1.1rem}
 .atext strong{color:var(--text);font-weight:500}
 .sg{margin-bottom:1.6rem}
-.sg-title{font-family:var(--font-h);font-size:.74rem;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.11em;margin-bottom:.7rem}
+.sg-title{font-family:var(--font-h);font-size:.7rem;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.13em;margin-bottom:.75rem}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem}
-.tag{background:var(--surface);border:1px solid var(--border2);border-radius:5px;padding:.28rem .7rem;font-size:.76rem;color:var(--text2);font-weight:400;transition:all .2s}
+.tag{background:transparent;border:1px solid var(--border2);border-radius:5px;padding:.28rem .7rem;font-size:.76rem;color:var(--text2);font-weight:400;transition:all .2s}
 .tag:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-dim)}
-.tag.hi{background:rgba(0,122,96,.08);border-color:rgba(0,122,96,.22);color:var(--accent)}
-.tag.bl{background:rgba(45,109,170,.07);border-color:rgba(45,109,170,.2);color:#2d6daa}
-.tag.pu{background:rgba(112,64,192,.07);border-color:rgba(112,64,192,.2);color:#7040c0}
+.tag.hi{background:rgba(0,122,96,.09);border-color:rgba(0,122,96,.28);color:var(--accent);font-weight:500}
+.tag.bl{background:transparent;border-color:var(--border2);color:var(--text2)}
+.tag.pu{background:transparent;border-color:var(--border2);color:var(--text2)}
 
 #projects{background:var(--bg)}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.3rem}
@@ -170,7 +170,13 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2.5rem;background:var(-
 .fu.vis{opacity:1;transform:translateY(0)}
 
 @media(max-width:920px){
-  .hero-inner{grid-template-columns:1fr}.hphoto-wrap{display:none}
+  .hero-inner{grid-template-columns:1fr;gap:2rem}
+  .hphoto-wrap{display:flex;justify-content:center;order:-1}
+  .hphoto-frame{width:150px;height:150px;border-radius:50%;box-shadow:0 8px 32px rgba(0,0,0,.15)}
+  .hphoto-frame img{object-position:center top}
+  .hphoto-frame::after{display:none}
+  .hphoto-ring{display:none}
+  .hbadge{display:none}
   .about-grid{grid-template-columns:1fr;gap:3rem}
   .exp-item{grid-template-columns:1fr}
   .cbody{grid-template-columns:1fr}.cdeco{display:none}
@@ -181,6 +187,7 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2.5rem;background:var(-
   section{padding:70px 0}
   .contact-box{padding:1.6rem}
   .hstats{gap:1.5rem}
+  .hphoto-frame{width:120px;height:120px}
 }
 </style>
 </head>
@@ -249,8 +256,8 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2.5rem;background:var(-
       <div class="fu">
         <div class="sg"><div class="sg-title">Analytics &amp; Business Intelligence</div><div class="tags"><span class="tag hi">Power BI</span><span class="tag hi">DAX</span><span class="tag hi">Power Query M</span><span class="tag hi">SQL</span><span class="tag">Looker Studio</span><span class="tag">ETL</span><span class="tag">KPI Design</span></div></div>
         <div class="sg"><div class="sg-title">Visualization &amp; Design</div><div class="tags"><span class="tag">Data Storytelling</span><span class="tag">Dashboard Design</span><span class="tag">Figma</span><span class="tag">Excel Advanced</span><span class="tag">Data Presentation</span></div></div>
-        <div class="sg"><div class="sg-title">Systems &amp; Data Modeling</div><div class="tags"><span class="tag bl">Oracle / PL-SQL</span><span class="tag bl">Star Schema</span><span class="tag bl">ERP Systems</span><span class="tag bl">EMR/EHR</span><span class="tag">Data Cleaning</span></div></div>
-        <div class="sg"><div class="sg-title">Statistics &amp; Analysis</div><div class="tags"><span class="tag pu">Hypothesis Testing</span><span class="tag pu">ANOVA</span><span class="tag pu">Descriptive Statistics</span><span class="tag pu">R Basics</span><span class="tag">Time Intelligence</span><span class="tag">Python (in progress)</span></div></div>
+        <div class="sg"><div class="sg-title">Systems &amp; Data Modeling</div><div class="tags"><span class="tag">Oracle / PL-SQL</span><span class="tag">Star Schema</span><span class="tag">ERP Systems</span><span class="tag">EMR/EHR</span><span class="tag">Data Cleaning</span></div></div>
+        <div class="sg"><div class="sg-title">Statistics &amp; Analysis</div><div class="tags"><span class="tag">Hypothesis Testing</span><span class="tag">ANOVA</span><span class="tag">Descriptive Statistics</span><span class="tag">R Basics</span><span class="tag">Time Intelligence</span><span class="tag">Python (in progress)</span></div></div>
       </div>
     </div>
   </div>
@@ -503,7 +510,7 @@ footer{border-top:1px solid var(--border);padding:1.6rem 2.5rem;background:var(-
           <h2 class="stitle">Ready for the<br>next challenge</h2>
           <p class="ssub">Open to Data Analyst and Business Intelligence roles where data drives strategic decisions and analytical insights shape business outcomes.</p>
         <div class="cinfo">
-            <a href="mailto:andriele.tatsch@gmail.com">andriele.tatsch@gmail.com</a>
+            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;andriele&#46;tatsch&#64;gmail&#46;com">andriele.tatsch&#64;gmail.com</a>
             <span>(515) 343-6896 &nbsp;·&nbsp; Ankeny, IA</span>
           </div>
           
